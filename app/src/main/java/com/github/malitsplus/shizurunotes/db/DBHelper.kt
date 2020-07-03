@@ -766,7 +766,7 @@ class DBHelper private constructor(
             return getBeanListByRaw(
                 """
                 SELECT 
-                a.difficulty 'phase'
+                a.lap_num_from 'phase'
                 ,b1.wave_group_id 'wave_group_id_1'
                 ,b2.wave_group_id 'wave_group_id_2'
                 ,b3.wave_group_id 'wave_group_id_3'
@@ -779,8 +779,8 @@ class DBHelper private constructor(
                 JOIN clan_battle_boss_group AS b4 ON a.clan_battle_boss_group_id = b4.clan_battle_boss_group_id AND b4.order_num = 4
                 JOIN clan_battle_boss_group AS b5 ON a.clan_battle_boss_group_id = b5.clan_battle_boss_group_id AND b5.order_num = 5
                 WHERE a.clan_battle_id=$clanBattleId 
-                AND a.lap_num_from <> a.lap_num_to
-                ORDER BY a.difficulty DESC 
+                
+                ORDER BY a.lap_num_from DESC 
                 """,
                 RawClanBattlePhase::class.java
             )
