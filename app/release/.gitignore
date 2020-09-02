@@ -3,7 +3,7 @@
 *.aar
 *.ap_
 *.aab
-output.json
+*.json
 
 # Files for the ART/Dalvik VM
 *.dex
