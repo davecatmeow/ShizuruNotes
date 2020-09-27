@@ -443,7 +443,7 @@
     <string name="inevitable_physical">必中の物理</string>
     <string name="Deal_s1_s2_damage_to_s3">%3$sに [%1$s] の%2$sダメージを与える。</string>
     <string name="Deal_s1_s2_damage_to_s3_and_this_attack_is_ensured_critical">%3$sに [%1$s] の%2$sダメージを与える。このアクションは必ずクリティカルする。</string>
-    <string name="Critical_damage_is_s_times_as_normal_damage">クリティカルした場合、ダメージが [%s] 倍になる。</string>
+    <string name="Critical_damage_is_s_times_as_normal_damage">クリティカルした場合、ダメージ倍率が [%s] 倍になる。</string>
     <string name="Change_self_position_to_s_then_return">%sの位置まで移動し、スキル終了後元の位置に戻る。</string>
     <string name="Change_self_position_s_forward_then_return">前へ [%s] 移動し、スキル終了後元の位置に戻る。</string>
     <string name="Change_self_position_s_backward_then_return">後ろへ [%s] 移動し、スキル終了後元の位置に戻る。</string>
@@ -498,7 +498,7 @@
     <string name="Fear">恐慌</string>
     <string name="Seal">刻印付与</string>
     <string name="Awe">畏怖</string>
-    <string name="Polymorph">トナカイ化</string>
+    <string name="Polymorph">変身</string>
     <string name="Changing_Max_HP">HP変化</string>
     <string name="Raise_s1_d2_attack_speed_for_s3_sec">%1$sの行動速度を [%2$d%%] アップ、効果時間 [%3$s] 秒。</string>
     <string name="Reduce_s1_d2_attack_speed_for_s3_sec">%1$sの行動速度を [%2$d%%] ダウン、効果時間 [%3$s] 秒。</string>
@@ -564,6 +564,7 @@
     <string name="venomed">猛毒状態中</string>
     <string name="poisoned_or_venomed">毒か猛毒状態中</string>
     <string name="breaking">Break状態中</string>
+    <string name="polymorphed">変身状態中</string>
     <string name="Condition_s">条件分岐：%s</string>
     <string name="separator">、</string>
     <string name="Revive_s1_with_d2_HP">%1$sを復活させ、HPを [%2$d%%] 回復させる。（この値はキャラの回復量上昇値に影響される）</string>
@@ -640,7 +641,7 @@
     <string name="Repeat_effect_d1_every_s2_sec_up_to_s3_sec_break_if_taken_more_than_s4_damage">[%2$s] 秒ごとに [アクション%1$d] を使い、最大 [%3$s] 秒まで続く。受けたダメージ量が [%4$s] を超えた時この効果を中断する。</string>
     <string name="use_d_after_time_up">効果時間終了後、[アクション%d] を使う。</string>
     <string name="use_d_after_break">効果が中断されたあと、[アクション%d] を使う。</string>
-    <string name="Polymorph_s1_for_s2_sec">%1$sを%2$s秒変貌させる。</string>
+    <string name="Polymorph_s1_for_s2_sec">%1$sを [%2$s] 秒変身させる。</string>
     <string name="Clear_all_s1_on_s2_with_chance_s3">[%3$s%%] の確率で%2$sの%1$sをすべて解除する。</string>
     <string name="buffs">バフ</string>
     <string name="debuffs">デバフ</string>
@@ -660,7 +661,7 @@
     <string name="nearest_without_self">自分以外最も近い</string>
     <string name="s_nearest_without_self">%s自分以外最も近い</string>
     <string name="the_s_nearest_without_self">自分以外%s近い</string>
-    <string name="shadow">シャドー</string>
+    <string name="shadow">シャドウ</string>
     <string name="s_shadow">%sシャドー</string>
     <string name="except_self">（自分以外）</string>
     <string name="use_d1_if_s2_HP_is_below_d3">%2$sのHPが [%3$d%%] 以下の場合、[アクション%1$d]を使う。</string>
@@ -671,4 +672,10 @@
     <string name="Use_s_if_this_skill_not_get_critical">このスキルがクリティカルしなかった場合、[アクション%s]を使う。</string>
     <string name="Change_attack_pattern_to_d">行動パターンを%dに変化させる。</string>
     <string name="This_effect_will_be_released_when_taking_damaged">この効果はダメージを受けた時に解除される。</string>
+    <string name="s_highest_HP">HPが一番高い%s</string>
+    <string name="s_lowest_HP">HPが一番低い</string>
+    <string name="the_s_highest_HP">HPが%s高い</string>
+    <string name="the_s_lowest_HP">HPが%s低い</string>
+    <string name="the_highest_HP">HPが一番高い</string>
+    <string name="the_lowest_HP">HPが一番低い</string>
 </resources>
