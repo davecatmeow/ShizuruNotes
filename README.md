@@ -1,5 +1,5 @@
 # ShizuruNotes
-An unofficial Android tool application of the game "Princess Connect Re:Dive".  
+An unofficial Android tool application of the game "Princess Connect Re:Dive". *Slightly modified for CN version*
 
 ## Requirement
 * Android 8+  
