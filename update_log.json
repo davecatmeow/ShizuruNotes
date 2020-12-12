@@ -1,9 +1,9 @@
 {
-	"versionCode": "23",
-	"versionName": "1.0.7",
+	"versionCode": "27",
+	"versionName": "1.0.11",
 	"recommend": "false",
-	"messageJa": "・専用装備の強化ステータスがゲーム内の値と異なる場合があるバグを修正\n・召喚物のIDを画面上に表示\n・一部UIの調整",
-	"messageZh": "・修正专用装备强化后的数值与游戏内实际数值存在微小差异的bug\n・使召唤物ID在界面上展示\n・调整了一部分UI",
+	"messageJa": "・クリティカルに関する説明文を訂正",
+	"messageZh": "・订正暴击相关的效果说明",
 	"infoJa": "",
 	"infoZh": ""
 }

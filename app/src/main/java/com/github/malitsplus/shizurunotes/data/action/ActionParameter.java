@@ -149,6 +149,12 @@ public class ActionParameter {
                 return new DivideAction();
             case 75:
                 return new ActionByHitCountAction();
+            case 76:
+                return new HealDownAction();
+            case 77:
+                return new PassiveSealAction();
+            case 78:
+                return new PassiveDamageUpAction();
             case 90:
                 return new PassiveAction();
             case 91:
@@ -377,8 +383,6 @@ public class ActionParameter {
             this.key = key;
         }
     }
-
-
 }
 
 enum PercentModifier{
@@ -394,7 +398,7 @@ enum PercentModifier{
         }
     }
 
-    public static PercentModifier parse(int value){
+    public static PercentModifier parse(int value) {
         switch (value) {
             case 2:
                 return percent;
