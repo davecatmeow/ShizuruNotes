@@ -35,7 +35,11 @@ public class TargetParameter {
     private boolean hasDirectionPhrase;
     private boolean hasTargetType;
     private boolean hasDependAction(){
-        return dependAction != null && (dependAction.getActionId() != 0 && targetType != TargetType.absolute);
+        return dependAction != null && (
+                dependAction.getActionId() != 0
+                && targetType != TargetType.absolute
+                && dependAction.parameter.actionType != ActionType.chooseArea
+        );
     }
 
     private void setBooleans(){
@@ -381,9 +385,9 @@ enum TargetType{
             case self:
                 return I18N.getString(R.string.self);
             case forward:
-                return I18N.getString(R.string.the_most_forward);
-            case backward:
                 return I18N.getString(R.string.the_most_backward);
+            case backward:
+                return I18N.getString(R.string.the_most_forward);
             case absolute:
                 return I18N.getString(R.string.targets_within_the_scope);
             case tpDescending:
@@ -447,9 +451,9 @@ enum TargetType{
             case hpDescendingOrNearForward:
                 return I18N.getString(R.string.s_highest_HP, localizedModifier);
             case forward:
-                return I18N.getString(R.string.s_most_forward, localizedModifier);
-            case backward:
                 return I18N.getString(R.string.s_most_backward, localizedModifier);
+            case backward:
+                return I18N.getString(R.string.s_most_forward, localizedModifier);
             case tpDescending:
             case tpDescendingOrNear:
             case tpDescendingOrMaxForward:
@@ -518,9 +522,9 @@ enum TargetType{
                 case hpDescendingOrNearForward:
                     return I18N.getString(R.string.the_s_highest_HP, localizedModifier);
                 case forward:
-                    return I18N.getString(R.string.the_s_most_forward, localizedModifier);
-                case backward:
                     return I18N.getString(R.string.the_s_most_backward, localizedModifier);
+                case backward:
+                    return I18N.getString(R.string.the_s_most_forward, localizedModifier);
                 case tpDescending:
                 case tpDescendingOrNear:
                     return I18N.getString(R.string.the_s_highest_TP, localizedModifier);
